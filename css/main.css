@@ -4,18 +4,65 @@
    Author's custom styles
    ========================================================================== */
 /* Logo must not appear too large on mobile */
- .img-responsive {
-  
+ 
+body{
+	font-family: 'Poiret+One';
+}
+
+ .portal-logo {
    max-width: 10%;
 }
-.navbar{
-	
+
+.jumbotron{
+    height: 450px;
+}
+
+hr {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #EEEEEE -moz-use-text-color #FFFFFF;
+  border-style: solid none;
+  border-width: 1px 0;
+  margin: 18px 0;
+  margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 2px solid #BF18BA;
 }
 
 
 
+.wideImage{
+	border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+a {
+	font-family: 'Indie Flower';
+}
 
 
+section#water{
+   
+    background-image: url("../img/water.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+section#orange{
+   
+    background-image: url("../img/bg_img.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 
