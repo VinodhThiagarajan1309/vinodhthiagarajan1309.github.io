@@ -46,31 +46,3 @@ a {
 }
 
 
-section#water{
-   
-    background-image: url("../img/water.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-
-section#orange{
-   
-    background-image: url("../img/bg_img.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-
-
-
-
-
-
-
-
-
