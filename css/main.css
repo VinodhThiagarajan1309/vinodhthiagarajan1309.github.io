@@ -44,6 +44,7 @@ hr {
 }
 
 .featureImg{
+
 	   border-radius: 15px;
     display: block;
     margin: 0 auto;
@@ -59,6 +60,21 @@ div.polaroid {
   
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
+  padding-top:40px;
 }
 
+.contenthover{
+  height:100%;
+  width:100%;
+  display: block;
+  float: left;
+  padding: 5px 10px;
+  padding-top: 100px;
+  background: #3c9632;
+  color: #fff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-family: 'Indie Flower';
+}
 
