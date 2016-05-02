@@ -29,16 +29,16 @@
 }
 
 .scores{
-	width : 100%;
+	width : 50%;
 	order : 5;
 }
 
 .weather{
-	width : 100%;
+	width : 50%;
 	order : 6;
 }
 
-.latest-news{
+.recent-news{
 	width : 100%;
 	order : 4;
 }
@@ -46,4 +46,13 @@
 footer{
 	width : 100%;
 	order : 7;
+}
+
+
+li.nav__item{
+	width:25%;
+}
+
+#navbar{
+	width: 95%;
 }
