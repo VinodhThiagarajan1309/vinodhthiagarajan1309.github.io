@@ -38,3 +38,7 @@
 footer{
 	width : 100%;
 }
+
+article.description{
+	display:none;
+}
