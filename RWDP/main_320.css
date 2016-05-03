@@ -3,40 +3,10 @@
 	flex-wrap: wrap; 
 }
  
-.box { 
+.box , .header ,.nav,.hero,
+.top-new , .scores , .weather,
+.latest_new , footer{ 
 	width: 100%; 
-}
-
-.header{
-	width : 100%;
-}
-
-.nav{
-	width : 100%;
-}
-
-.hero{
-	width : 100%;
-}
-
-.top-news{
-	width : 100%;
-}
-
-.scores{
-	width : 100%;
-}
-
-.weather{
-	width : 100%;
-}
-
-.latest-news{
-	width : 100%;
-}
-
-footer{
-	width : 100%;
 }
 
 article.description{
