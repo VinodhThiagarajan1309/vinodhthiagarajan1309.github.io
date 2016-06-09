@@ -335,7 +335,7 @@ footer{
 /*Map CSS*/
 
 section#places{
-    height: 700px;
+    height: 950px;
     background-image: url("../img/mapSec.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
