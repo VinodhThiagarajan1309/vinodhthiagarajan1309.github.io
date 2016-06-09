@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>World Top 15 movies</title>
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <link rel="icon" href="http://s20.postimg.org/5q56f8v0t/favorites_icon.png">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <style type="text/css" media="screen">
+        body {
+            padding-top: 80px;
+            background-image: url("http://s20.postimg.org/lack5s559/bokeh_706994.jpg");
+        }
+        #trailer .modal-dialog {
+            margin-top: 200px;
+            width: 640px;
+            height: 480px;
+        }
+        .hanging-close {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            z-index: 9001;
+        }
+        #trailer-video {
+            width: 100%;
+            height: 100%;
+        }
+        .movie-tile {
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }
+        .movie-tile:hover {
+            background-color: #000000;
+            cursor: pointer;
+            border-radius:15px;
+            opacity:0.8;
+        }
+        .scale-media {
+            padding-bottom: 56.25%;
+            position: relative;
+        }
+        .scale-media iframe {
+            border: none;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            background-color: white;
+        }
+
+        h4,p ,.footer{
+            color:white;
+        }
+
+        img{
+            border-radius:15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+
+    </style>
+    <script type="text/javascript" charset="utf-8">
+        // Pause the video when the modal is closed
+        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
+            // Remove the src so the player itself gets removed, as this is the only
+            // reliable way to ensure the video stops playing in IE
+            $("#trailer-video-container").empty();
+        });
+        // Start playing the video whenever the trailer modal is opened
+        $(document).on('click', '.movie-tile', function (event) {
+            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
+            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
+              'id': 'trailer-video',
+              'type': 'text-html',
+              'src': sourceUrl,
+              'frameborder': 0
+            }));
+        });
+        // Animate in the movies when the page loads
+        $(document).ready(function () {
+          $('.movie-tile').hide().first().show("fast", function showNext() {
+            $(this).next("div").show("fast", showNext);
+          });
+        });
+    </script>
+</head>
+
+  <body>
+    <!-- Trailer Video Modal -->
+    <div class="modal" id="trailer">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+          </a>
+          <div class="scale-media" id="trailer-video-container">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Page Content -->
+    <div class="container">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">World Top 15 movies of All Time</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="7d_jQycdQGo" data-toggle="modal" data-target="#trailer">
+    <img src="http://image.tmdb.org/t/p/w500/lIv1QinFqz4dlp5U4lQ6HaiskOZ.jpg?api_key=14f6f23935d5f6396544342f801e171d" width="220" height="342" alt="Whiplash">
+    <h4>Whiplash</h4>
+</div>
+
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="WawU4ouldxU" data-toggle="modal" data-target="#trailer">
+    <img src="http://image.tmdb.org/t/p/w500/9O7gLzmreU0nGkIB6K3BsJbzvNv.jpg?api_key=14f6f23935d5f6396544342f801e171d" width="220" height="342" alt="The Shawshank Redemption">
+    <h4>The Shawshank Redemption</h4>
+</div>
+
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="sY1S34973zA" data-toggle="modal" data-target="#trailer">
+    <img src="http://image.tmdb.org/t/p/w500/d4KNaTrltq6bpkFS01pYtyXa09m.jpg?api_key=14f6f23935d5f6396544342f801e171d" width="220" height="342" alt="The Godfather">
+    <h4>The Godfather</h4>
+</div>
+
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="KlyknsTJk0w" data-toggle="modal" data-target="#trailer">
+    <img src="http://image.tmdb.org/t/p/w500/nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg?api_key=14f6f23935d5f6396544342f801e171d" width="220" height="342" alt="Interstellar">
+    <h4>Interstellar</h4>
+</div>
+
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="_jGXcSBcvQQ" data-toggle="modal" data-target="#trailer">
+    <img src="http://image.tmdb.org/t/p/w500/ynXoOxmDHNQ4UAy0oU6avW71HVW.jpg?api_key=14f6f23935d5f6396544342f801e171d" width="220" height="342" alt="Spirited Away">
+    <h4>Spirited Away</h4>
+</div>
+
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="0RqDiYnFxTk" data-toggle="modal" data-target="#trailer">
+    <img src="http://image.tmdb.org/t/p/w500/4mFsNQwbD0F237Tx7gAPotd0nbJ.jpg?api_key=14f6f23935d5f6396544342f801e171d" width="220" height="342" alt="The Intouchables">
+    <h4>The Intouchables</h4>
+</div>
+
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="8xLji7WsW0w" data-toggle="modal" data-target="#trailer">
+    <img src="http://image.tmdb.org/t/p/w500/rDMxjCYEVnvLC4nsBpB6wjL0LDy.jpg?api_key=14f6f23935d5f6396544342f801e171d" width="220" height="342" alt="Wolf Children">
+    <h4>Wolf Children</h4>
+</div>
+
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="E_Ci-pAL4eE" data-toggle="modal" data-target="#trailer">
+    <img src="http://image.tmdb.org/t/p/w500/eqFckcHuFCT1FrzLOAvXBb4jHwq.jpg?api_key=14f6f23935d5f6396544342f801e171d" width="220" height="342" alt="Room">
+    <h4>Room</h4>
+</div>
+
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="9O1Iy9od7-A" data-toggle="modal" data-target="#trailer">
+    <img src="http://image.tmdb.org/t/p/w500/tHbMIIF51rguMNSastqoQwR0sBs.jpg?api_key=14f6f23935d5f6396544342f801e171d" width="220" height="342" alt="The Godfather: Part II">
+    <h4>The Godfather: Part II</h4>
+</div>
+
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="mM6cLnscmO8" data-toggle="modal" data-target="#trailer">
+    <img src="http://image.tmdb.org/t/p/w500/3TpMBcAYH4cxCw5WoRacWodMTCG.jpg?api_key=14f6f23935d5f6396544342f801e171d" width="220" height="342" alt="Paperman">
+    <h4>Paperman</h4>
+</div>
+
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="q1K9EH90CyA" data-toggle="modal" data-target="#trailer">
+    <img src="http://image.tmdb.org/t/p/w500/A2rxR8g3y6kcjIoR2fcwtq9eppc.jpg?api_key=14f6f23935d5f6396544342f801e171d" width="220" height="342" alt="Presto">
+    <h4>Presto</h4>
+</div>
+
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="qyX89c3nSHw" data-toggle="modal" data-target="#trailer">
+    <img src="http://image.tmdb.org/t/p/w500/gzlJkVfWV5VEG5xK25cvFGJgkDz.jpg?api_key=14f6f23935d5f6396544342f801e171d" width="220" height="342" alt="Princess Mononoke">
+    <h4>Princess Mononoke</h4>
+</div>
+
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="pAYEQP8gx3w" data-toggle="modal" data-target="#trailer">
+    <img src="http://image.tmdb.org/t/p/w500/f7DImXDebOs148U4uPjI61iDvaK.jpg?api_key=14f6f23935d5f6396544342f801e171d" width="220" height="342" alt="Life Is Beautiful">
+    <h4>Life Is Beautiful</h4>
+</div>
+
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="None" data-toggle="modal" data-target="#trailer">
+    <img src="http://image.tmdb.org/t/p/w500/bwVhmPpydv8P7mWfrmL3XVw0MV5.jpg?api_key=14f6f23935d5f6396544342f801e171d" width="220" height="342" alt="Grave of the Fireflies">
+    <h4>Grave of the Fireflies</h4>
+</div>
+
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="SUXWAEX2jlg" data-toggle="modal" data-target="#trailer">
+    <img src="http://image.tmdb.org/t/p/w500/811DjJTon9gD6hZ8nCjSitaIXFQ.jpg?api_key=14f6f23935d5f6396544342f801e171d" width="220" height="342" alt="Fight Club">
+    <h4>Fight Club</h4>
+</div>
+
+
+    </div>
+    <br>
+    <div class="container">
+    <div class=" footer col-md-offset-5">&copy; Vinodh Thiagarajan</div>
+    </div>
+  </body>
+</html>
