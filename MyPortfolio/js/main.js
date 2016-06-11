@@ -1,3 +1,4 @@
+// Smooth Scroll config after the page is ready
 $(document).ready(function(){
 	var nav= $('.navbar-fixed-top');
 
@@ -10,49 +11,36 @@ $(document).ready(function(){
 		}
 	});
 
-	/*var map;
-    var elevator;
-    var myOptions = {
-        zoom: 1,
-        center: new google.maps.LatLng(0, 0),
-        mapTypeId: 'terrain'
-    };
-    map = new google.maps.Map($('#map_canvas')[0], myOptions);
-
-    var addresses = ['Norway', 'Africa', 'Asia','North America','South America'];
-
-    for (var x = 0; x < addresses.length; x++) {
-        $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+addresses[x]+'&sensor=false', null, function (data) {
-            var p = data.results[0].geometry.location
-            var latlng = new google.maps.LatLng(p.lat, p.lng);
-            new google.maps.Marker({
-                position: latlng,
-                map: map
-            });
-
-        });
-    }*/
-
 });
 
-      /*
-This is the fun part. Here's where we generate the custom Google Map for the website.
-See the documentation below for more details.
-https://developers.google.com/maps/documentation/javascript/reference
-*/
+// Work around for fixing the collapsible menu not closing after selecting the list item ( courtesy:Stack Over Flow)
+ $(document).on('click', function(event){
+      var $clickedOn = $(event.target),
+          $collapsableItems = $('.collapse'),
+          isToggleButton = ($clickedOn.closest('.navbar-toggle').length == 1),
+          isLink = ($clickedOn.closest('a').length == 1),
+          isOutsideNavbar = ($clickedOn.parents('.navbar').length == 0);
+
+      if( (!isToggleButton && isLink) || isOutsideNavbar ) {
+        $collapsableItems.each(function(){
+          $(this).collapse('hide');
+        });
+      }
+    });
+
+
 var map;    // declares a global map variable
 
 
 /*
-Start here! initializeMap() is called when page is loaded.
+nitializeMap() is called when page is loaded.
 */
 function initializeMap() {
 
   var locations;
 
   var mapOptions = {
-    //disableDefaultUI: true
-  };
+  }
 
   /* 
   For the map to be displayed, the googleMap var must be
@@ -91,7 +79,7 @@ function initializeMap() {
       content: name
     });
 
-    // hmmmm, I wonder what this is about...
+    
     google.maps.event.addListener(marker, 'click', function() {
        infoWindow.open(map,marker);
        map.setZoom(8);
@@ -171,7 +159,7 @@ window.addEventListener('resize', function(e) {
 
  
 
-
+// SmoothScroll configuration
 smoothScroll.init({
     speed: 500, // Integer. How fast to complete the scroll in milliseconds
     easing: 'easeInOutCubic', // Easing pattern to use

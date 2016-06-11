@@ -6,14 +6,17 @@
       <title>Vinodh Thiagarajan - Portfolio</title>
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Styles for this page -->
       <link rel="stylesheet" href="css/normalize.min.css">
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/font-awesome.min.css">
       <link rel="icon" href="img/inspired-apple-vinodh.png">
       <script src="js/vendor/modernizr-2.8.3.min.js"></script>
       <link rel="stylesheet" href="css/main.css">
+      <!-- Google maps api information -->
       <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBjv1eyPhLysbl7vH9OBQ1Vu4cZ1uswDG4&libraries=places"></script> 
    </head>
+   <!-- This page is designed using Bootstrap 3 -->
    <body data-spy="scroll" data-target=".navbar">
       <nav class="navbar navbar-default navbar-fixed-top">
          <div class="container-fluid">
@@ -35,80 +38,173 @@
                   <li><a data-scroll href="#contact">Contact</a></li>
                </ul>
             </div>
-            <!--/.nav-collapse -->
          </div>
-         <!--/.container-fluid -->
       </nav>
+      <!-- Home Section -->
       <section id="home" class="home">
          <div class=" container homecontainer">
          <div class="row">
-         <div class="col-lg-offset-2 col-lg-8">
+            <div class="col-md-offset-1 col-md-10">
+            <a href="http://vinodhthiagarajan1309.github.io/movie_trailers/fresh_tomatoes.html" target="_blank">
+               <img class="img img-responsive img-box" src="img/trailerProj-img_1.jpg" alt="Top 15 movies site screenshot"/>
+            </a>
+            </div>
+         </div>
+         <br><br>
+         <h3 class="text-center"> Recent Projects </h3>
+         <br>
+         <div class="row">
+            <div class="col-md-4">
+               <figure>
+                  <img class="img img-responsive img-box featuredImages" src="img/calculator-proj.jpg" alt="Top 15 movies site screenshot"/>
+                  <div class="text-center">
+                     <figcaption class="captionText label label-success"><a href="http://codepen.io/VinodhThiagarajan/full/vLQWWB" target="_blank">Responsive Calculator</a></figcaption>
+                  </div>
+               </figure>
+            </div>
+            <div class="col-md-4">
+               <figure>
+                  <img class="img img-responsive img-box featuredImages" src="img/quote-gen-proj.jpg" alt="Quote generator project screenshot"/>
+                  <div class="text-center">
+                     <figcaption class="captionText label label-success"><a href="http://www.javagrasp.info/quotes/" target="_blank">JSON driven Quote Generator</a></figcaption>
+                  </div>
+               </figure>
+            </div>
+            <div class="col-md-4">
+               <figure>
+                  <img class="img img-responsive img-box featuredImages" src="img/pomodoro-proj.jpg" alt="Pomodoro site screenshot"/>
+                  <div class="text-center">
+                     <figcaption class="captionText label label-success"><a href="http://www.javagrasp.info/pomodoro/" target="_blank">Personal Pomodoro</a></figcaption>
+                  </div>
+               </figure>
+            </div>
          </div>
       </section>
+      <!-- About Section -->
       <section id="about" class="about">
          <div class="container aboutContainer">
-         </div>
-      </section>
-      <section id="projects" class="projects">
-         <div class="container projectContainer">
-         <h3 class="text-center"> Projects </h3>
-         </div>
-      </section>
-      <section id="places" class="places">
-         <div class="container-fluid mapContainer">
-            <div class=" row mapRow">
-               <div class="mapCol col-md-6">
-                  <div id="map">
+         <h3 class="text-center"> About </h3>
+         <article id="aboutMeArticle">
+            <div class="row aboutRow">
+            <div class="col-sm-6">
+               <p class="text-center aboutParagraph">
+                  I'm a self taught Java developer ,Web designer , seasonal Freelancer based out of Texas.
+                  I'm currently part of a web development team , building web and mobile applications.
+                  My passion is to use technology based solutions, to help solve real world challenges.  
+               </p>
+               <div class="well hideOn380">
+                  <h4 class="aboutmeH4 text-center">Languages and Frameworks:</h4>
+                  <div class="row">
+                     <div class="col-sm-4">
+                        <ul class="fa-ul">
+                           <li> <i class="fa-li fa fa-language fa-spin"></i> UI Stuff</li>
+                           <br>
+                           <li> <i class="fa-li fa fa-spinner fa-spin"></i> Javascript</li>
+                           <li> <i class="fa-li fa fa-spinner fa-spin"></i> HTML5</li>
+                           <li> <i class="fa-li fa fa-spinner fa-spin"></i> CSS3</li>
+                           <li> <i class="fa-li fa fa-spinner fa-spin"></i> jQuery</li>
+                           <li> <i class="fa-li fa fa-spinner fa-spin"></i> Bootstrap3</li>
+                           <li> <i class="fa-li fa fa-spinner fa-spin"></i> Angular.js</li>
+                        </ul>
+                     </div>
+                     <div class="col-sm-3">
+                        <ul class="fa-ul">
+                           <li> <i class="fa-li fa fa-certificate fa-spin"></i>Lang's</li>
+                           <br>
+                           <li> <i class="fa-li fa fa-spinner fa-spin"></i> Java</li>
+                           <li> <i class="fa-li fa fa-spinner fa-spin"></i> Groovy</li>
+                           <li> <i class="fa-li fa fa-spinner fa-spin"></i> Python</li>
+                        </ul>
+                     </div>
+                     <div class="col-sm-5">
+                        <ul class="fa-ul">
+                           <li> <i class="fa-li fa fa-laptop fa-spin"></i>Frameworks</li>
+                           <br>
+                           <li> <i class="fa-li fa fa-spinner fa-spin"></i> Spring</li>
+                           <li> <i class="fa-li fa fa-spinner fa-spin"></i> Grails</li>
+                           <li> <i class="fa-li fa fa-spinner fa-spin"></i> Struts</li>
+                           <li> <i class="fa-li fa fa-spinner fa-spin"></i> PLAY!</li>
+                           <li> <i class="fa-li fa fa-spinner fa-spin"></i> JPA</li>
+                        </ul>
+                     </div>
                   </div>
                </div>
-               <div class="mapCol col-md-6">
-                <h3 class="mapText text-center"> Groomed At </h3>
+            </div>
+         <div class=" col-sm-offset-2 col-sm-3">
+            <img class=" text-center img-responsive img-circle myPic" src="img/Vinodh.jpg">
+         </div>
+         </article>
+      </section>
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+         <div class="container projectContainer">
+            <h3 class="text-center"> Projects </h3>
+            <div class="row projRow">
+               <div class="col-md-offset-1 col-md-10">
+                  <img class="img img-responsive img-box" src="img/projects.jpg" alt="Vinodh's github repository"/>
                </div>
             </div>
          </div>
       </section>
+      <!-- Groomed At Section -->
+      <section id="places" class="places">
+         <div class="container-fluid mapContainer">
+            <div class=" row mapRow">
+               <div class="mapCol col-md-6 hideOn995">
+                  <div id="map">
+                  </div>
+               </div>
+               <div class="mapCol col-md-6">
+                  <h3 class="mapText text-center"> Groomed At </h3>
+                  <div class="myLocations">
+                     <img class="img img-responsive img-box" src="img/GroomedAt.jpg" alt="Vinodh's Locations"/>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Contacts Section -->
       <section id="contact" class="contact">
          <div class="container contactContainer">
          <h3 class="text-center"> Contact </h3>
          <div class="row contactRow">
             <div class="well contactWell">
                <div class="row">
-                  <div class="col-sm-4 text-center">
+                  <div class="col-xs-4 col-md-2 text-center">
                      <a href="http://codepen.io/VinodhThiagarajan/" class="btn btn-primary btn-lg " target="_blank"> 
-                     <i class="fa fa-codepen"></i> 
-                     CodePen</a>
+                     <i class="fa fa-codepen fa-3x"></i> </a>
                   </div>
-                  <div class="col-sm-4 text-center">
+                  <div class=" col-xs-4 col-md-2 text-center">
                      <a href="https://github.com/VinodhThiagarajan86?tab=repositories" class="btn btn-primary btn-lg" target="_blank"> 
-                     <i class="fa fa-github"></i> 
-                     Github
+                     <i class="fa fa-github fa-3x"></i>
                      </a>
                   </div>
-                  <div class="col-sm-4 text-center">
-                     <a href="http://freecodecamp.com/" class="btn btn-primary btn-lg" target="_blank"> 
-                     <i class="fa fa-fire"></i> 
-                     freeCodeCamp</a>
+                  <div class="col-xs-4 col-md-2 text-center">
+                     <a href="https://www.freecodecamp.com/vinodhthiagarajan1309" class="btn btn-primary btn-lg" target="_blank"> 
+                     <i class="fa fa-fire fa-3x"></i></a>
                   </div>
-               </div>
-               <br>
-               <div class="row">
-                  <div class="col-sm-7 text-center">
+                  <div class=" col-xs-4 col-md-2 text-center">
                      <a  href="https://plus.google.com/115217591120956106341/posts" class="btn btn-primary btn-lg " 
                         target="_blank">
-                     <i class="fa fa-google"></i> 
-                     Vinodh.Thiagarajan</a>
+                     <i class="fa fa-google fa-3x"></i>
+                     </a>
                   </div>
-                  <div class="col-sm-1">
+                  <div class="col-xs-4 col-md-2 text-center">
                      <a class="btn btn-primary btn-lg"
                         href="https://www.linkedin.com/pub/vinodh-thiagarajan/97/b0a/2b2" target="_blank"> 
-                     <i class="fa fa-linkedin"></i> 
-                     Vinodh Thiagarajan
+                     <i class="fa fa-linkedin fa-3x"></i>
+                     </a>
+                  </div>
+                  <div class="col-xs-4 col-md-2 text-center">
+                     <a class="btn btn-primary btn-lg"
+                        href="http://stackoverflow.com/users/1252271/vinodh-thiagarajan" target="_blank"> 
+                     <i class="fa fa-stack-overflow fa-3x"></i>
                      </a>
                   </div>
                </div>
             </div>
-            <!--well -->
          </div>
+         <!-- Footer Area -->
          <footer>
             <div class="container">
                <div class="row">
@@ -125,7 +221,7 @@
                         <li>
                            <a href="#projects">Projects</a>
                         </li>
-                         <li class="footer-menu-divider">⋅</li>
+                        <li class="footer-menu-divider">⋅</li>
                         <li>
                            <a href="#places">Groomed At</a>
                         </li>
@@ -140,6 +236,7 @@
             </div>
          </footer>
       </section>
+      <!-- Make sure to load the scripts after the page is built -->
       <script src="js/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/smooth-scroll.min.js"></script>

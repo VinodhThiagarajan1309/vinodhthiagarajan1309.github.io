@@ -1,80 +1,424 @@
+    /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+    html {
+        color: #222;
+        font-size: 1em;
+        line-height: 1.4;
+    }
+
+    ::-moz-selection {
+        background: #b3d4fc;
+        text-shadow: none;
+    }
+
+    ::selection {
+        background: #b3d4fc;
+        text-shadow: none;
+    }
+
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0;
+    }
+
+    audio,
+    canvas,
+    iframe,
+    img,
+    svg,
+    video {
+        vertical-align: middle;
+    }
+
+    fieldset {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    .browserupgrade {
+        margin: 0.2em 0;
+        background: #ccc;
+        color: #000;
+        padding: 0.2em 0;
+    }
 
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-/* Logo must not appear too large on mobile */
- 
-body{
-	font-family: 'Poiret+One';
-}
+    /* ==========================================================================
+       Vinodh's custom styles
+       ========================================================================== */
 
-.navbar{
-  margin-bottom: 0jquery.hovercap.jsjquery.hovercap.jspx;
-}
+    .portal-logo {
+       max-width: 10%;
+    }
 
- .portal-logo {
-   max-width: 10%;
-}
+    .navbar-default {
+        box-shadow: none;
+        background-color: transparent;
+        border: none;
+        transition : 1s all ease;
+    }
 
-.jumbotron{
-    height: 450px;
-}
+    .navbar-default .navbar-brand {
+        color: #ffffff;
+    }
 
-hr {
-  -moz-border-bottom-colors: none;
-  -moz-border-image: none;
-  -moz-border-left-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-top-colors: none;
-  border-color: #EEEEEE -moz-use-text-color #FFFFFF;
-  border-style: solid none;
-  border-width: 1px 0;
-  margin: 18px 0;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 0;
-  border-top: 2px solid #BF18BA;
-}
+    .navbar-default .navbar-nav>li>a {
+        color: #ffffff;
+    }
 
-.wideImage{
- border-radius: 15px;
-    display: block;
-    margin: 0 auto;
-}
+    .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+        color: #fff;
+        background-color: transparent;
+    }
 
-.featureImg{
+    .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+        color: #ffffff;
+        background-color: transparent;
+    }
 
-	   border-radius: 15px;
-    display: block;
-    margin: 0 auto;
-}
+    .nav > li.active{
+        background-color: #000000;
+         transition : 1s all ease;
+        
+    }
 
-a {
-	font-family: 'Indie Flower';
-}
+    .navbar-default .navbar-nav>li>a:hover {
+        color: #ffffff;
+        font-size: 1.5em;
+    } 
 
 
-div.polaroid {
+    h1{
+        font-size: 5em;
+        color: #000000;
+    }
+    section#home{
+        height: 950px;
+        background-image: url("../img/portfolioXL.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-  
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-  padding-top:40px;
-}
+    div.homecontainer{
+        padding-top: 75px;
+    }
 
-.contenthover{
-  height:100%;
-  width:100%;
-  display: block;
-  float: left;
-  padding: 5px 10px;
-  padding-top: 100px;
-  background: #3c9632;
-  color: #fff;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  font-family: 'Indie Flower';
-}
+    div.aboutContainer,
+    div.mapContainer,
+    div.projectContainer,
+    div.contactContainer,
+    div.contactRow{
+        padding-top: 45px;
+    }
 
+    section#about{
+        height: 950px;
+        background-image: url("../img/office.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    section#projects{
+        height: 950px;
+        background-image: url("../img/board.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    section#contact{
+        height: 950px;
+        background-image: url("../img/map.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    a:hover, a:focus {
+        color: #23527c;
+        text-decoration: none;
+    }
+
+    div.container>h3 , .mapText , .captionText,.captionText>a{
+        color: #ffffff;
+    }
+
+    .mapText:after , div.container>h3:after{
+        content: "";
+        height: 3px;
+        width: 50px;
+        background-color: #ffffff;
+        display:block;
+        margin : 0 auto;
+        margin-top : 10px;  
+    }
+
+    div.aboutRow , 
+    div.projRow,
+    div.myLocations{
+        padding-top: 75px;
+    }
+
+    p.aboutParagraph {
+        font-size: 1.5em;
+        color: #fff;
+    }
+
+    .fa-ul>li {
+        font-size: 1em;
+        color: #fff;
+    }
+
+    .aboutmeH4{
+        color: #fff;
+    }
+
+    .well{
+        background-color: transparent;
+    }
+
+    .effect{
+        background-color: #00324B;
+        min-height: 30px;
+        box-shadow: 0 0 10px black;
+        padding-top: 0;
+        transition : 1s all ease;
+
+    }
+
+    footer{
+        padding-top: 250px;
+        color: white;
+    }
+
+    .list-inline>li>a
+     {
+        color: white;
+    }
+
+    .projWell{
+        background-color: transparent;
+        font-size: 1.3em;
+        color: #FFF;
+    }
+
+    .contactWell{
+        background-color: transparent;
+        font-size: 1em;
+        color: #FFF;
+    }
+
+    .blue-circle {
+        
+        width: 100%;
+        padding-bottom : 100%;
+        background-color: #15365b; 
+        border-radius : 50%;
+        -moz-border-radius : 50%;
+        -webkit-border-radius : 50%;
+        margin : 0 auto;
+    }
+
+
+    .img-box{
+        -webkit-box-shadow: 0px 2px 22px 8px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 2px 22px 8px rgba(0,0,0,0.75);
+        box-shadow: 0px 2px 22px 8px rgba(0,0,0,0.75);
+    }
+
+    .featuredImages{
+        width: 400px;
+        height: 200px;
+    }
+
+    .img-responsive{
+        margin: 0 auto;
+    }
+
+    /*Map CSS*/
+
+    section#places{
+        height: 950px;
+        background-image: url("../img/mapSec.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+        
+    #map {
+        height: 100%;
+    }
+    .mapContainer,.mapRow , .mapCol{
+        height: 100%;
+    }
+
+
+    /* ==========================================================================
+       Media Queries
+       ========================================================================== */
+    @media (max-width: 830px) {
+        .navbar-header {
+            float: none;
+        }
+        .navbar-toggle {
+            display: block;
+        }
+        .navbar-collapse {
+            border-top: 1px solid transparent;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+        .navbar-collapse.collapse {
+            display: none!important;
+        }
+        .navbar-nav {
+            float: none!important;
+            margin: 7.5px -15px;
+        }
+        .navbar-nav>li {
+            float: none;
+        }
+        .navbar-nav>li>a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .navbar-collapse.collapse.in {
+            display: block !important;
+        }  
+
+        .nav{
+        background-color: #00324B;
+        min-height: 30px;
+        box-shadow: 0 0 10px black;
+        padding-top: 0;
+        transition : 1s all ease;
+        }
+
+       .featuredImages{
+        padding: 10px;
+        }
+
+        div.aboutContainer,
+        div.mapContainer,
+        div.projectContainer,
+        div.contactContainer,
+        div.contactRow{
+            padding-top: 120px;
+        }
+
+        .myPic{
+            width: 50%;
+            height: 50%;
+        }
+
+    }
+
+    @media (max-width: 995px) {
+        section#home{
+        height: 1300px;
+       }
+       section#projects{
+        height: 900px;
+       }
+        .featuredImages{
+        padding-top: 10px;
+        }
+
+        .hideOn995{
+        display: none;
+        }
+        .hideOn380{
+            display:none;
+        }
+    }
+
+    @media (max-width: 380px) {
+        section#home{
+        height: 1100px;
+       }
+       section#projects,
+       section#places{
+        height: 500px;
+       }
+
+        div.aboutContainer,
+        div.mapContainer,
+        div.projectContainer,
+        div.contactContainer,
+        div.contactRow{
+            padding-top: 45px;
+        }
+
+        .hideOn380{
+            display:none;
+        }
+
+    }
+
+    @media print,
+           (-o-min-device-pixel-ratio: 5/4),
+           (-webkit-min-device-pixel-ratio: 1.25),
+           (min-resolution: 120dpi) {
+
+    }
+
+
+
+
+    /* ==========================================================================
+       Helper classes from HTMLBoilerPlate
+       ========================================================================== */
+
+    .hidden {
+        display: none !important;
+        visibility: hidden;
+    }
+
+    .visuallyhidden {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    .visuallyhidden.focusable:active,
+    .visuallyhidden.focusable:focus {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+    }
+
+    .invisible {
+        visibility: hidden;
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+        content: " ";
+        display: table;
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+    .clearfix {
+        *zoom: 1;
+    }
