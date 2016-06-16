@@ -1,21 +1,11 @@
     /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-
+    
     html {
         color: #222;
         font-size: 1em;
         line-height: 1.4;
     }
-
-    ::-moz-selection {
-        background: #b3d4fc;
-        text-shadow: none;
-    }
-
-    ::selection {
-        background: #b3d4fc;
-        text-shadow: none;
-    }
-
+    
     hr {
         display: block;
         height: 1px;
@@ -50,21 +40,19 @@
         color: #000;
         padding: 0.2em 0;
     }
-
-
     /* ==========================================================================
        Vinodh's custom styles
        ========================================================================== */
-
+    
     .portal-logo {
-       max-width: 10%;
+        max-width: 10%;
     }
 
     .navbar-default {
         box-shadow: none;
         background-color: transparent;
         border: none;
-        transition : 1s all ease;
+        transition: 1s all ease;
     }
 
     .navbar-default .navbar-brand {
@@ -75,33 +63,34 @@
         color: #ffffff;
     }
 
-    .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    .navbar-default .navbar-nav>li>a:hover,
+    .navbar-default .navbar-nav>li>a:focus {
         color: #fff;
         background-color: transparent;
     }
 
-    .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus {
         color: #ffffff;
         background-color: transparent;
     }
 
-    .nav > li.active{
+    .nav > li.active {
         background-color: #000000;
-         transition : 1s all ease;
-        
+        transition: 1s all ease;
     }
 
     .navbar-default .navbar-nav>li>a:hover {
         color: #ffffff;
         font-size: 1.5em;
-    } 
+    }
 
-
-    h1{
+    h1 {
         font-size: 5em;
         color: #000000;
     }
-    section#home{
+
+    section#home {
         height: 950px;
         background-image: url("../img/portfolioXL.jpg");
         background-attachment: fixed;
@@ -109,7 +98,7 @@
         background-size: cover;
     }
 
-    div.homecontainer{
+    div.homecontainer {
         padding-top: 75px;
     }
 
@@ -117,11 +106,11 @@
     div.mapContainer,
     div.projectContainer,
     div.contactContainer,
-    div.contactRow{
+    div.contactRow {
         padding-top: 45px;
     }
 
-    section#about{
+    section#about {
         height: 950px;
         background-image: url("../img/office.jpg");
         background-attachment: fixed;
@@ -129,7 +118,7 @@
         background-size: cover;
     }
 
-    section#projects{
+    section#projects {
         height: 950px;
         background-image: url("../img/board.jpg");
         background-attachment: fixed;
@@ -137,7 +126,7 @@
         background-size: cover;
     }
 
-    section#contact{
+    section#contact {
         height: 950px;
         background-image: url("../img/map.jpg");
         background-attachment: fixed;
@@ -145,28 +134,35 @@
         background-size: cover;
     }
 
-    a:hover, a:focus {
+    a:hover,
+    a:focus {
         color: #23527c;
         text-decoration: none;
     }
 
-    div.container>h3 , .mapText , .captionText,.captionText>a{
+    div.container>h3,
+    .subtTitles,
+    .mapText,
+    .captionText,
+    .captionText>a {
         color: #ffffff;
     }
 
-    .mapText:after , div.container>h3:after{
+    .mapText:after,
+    .subtTitles:after,
+    div.container>h3:after {
         content: "";
         height: 3px;
         width: 50px;
         background-color: #ffffff;
-        display:block;
-        margin : 0 auto;
-        margin-top : 10px;  
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
     }
 
-    div.aboutRow , 
+    div.aboutRow,
     div.projRow,
-    div.myLocations{
+    div.myLocations {
         padding-top: 75px;
     }
 
@@ -180,245 +176,200 @@
         color: #fff;
     }
 
-    .aboutmeH4{
+    .aboutmeH4 {
         color: #fff;
     }
 
-    .well{
+    .well {
         background-color: transparent;
     }
 
-    .effect{
+    .effect {
         background-color: #00324B;
         min-height: 30px;
         box-shadow: 0 0 10px black;
         padding-top: 0;
-        transition : 1s all ease;
-
+        transition: 1s all ease;
     }
 
-    footer{
+    footer {
         padding-top: 250px;
         color: white;
     }
 
-    .list-inline>li>a
-     {
+    .list-inline>li>a {
         color: white;
     }
 
-    .projWell{
+    .projWell {
         background-color: transparent;
         font-size: 1.3em;
         color: #FFF;
     }
 
-    .contactWell{
+    .contactWell {
         background-color: transparent;
         font-size: 1em;
         color: #FFF;
     }
 
     .blue-circle {
-        
         width: 100%;
-        padding-bottom : 100%;
-        background-color: #15365b; 
-        border-radius : 50%;
-        -moz-border-radius : 50%;
-        -webkit-border-radius : 50%;
-        margin : 0 auto;
-    }
-
-
-    .img-box{
-        -webkit-box-shadow: 0px 2px 22px 8px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 2px 22px 8px rgba(0,0,0,0.75);
-        box-shadow: 0px 2px 22px 8px rgba(0,0,0,0.75);
-    }
-
-    .featuredImages{
-        width: 400px;
-        height: 200px;
-    }
-
-    .img-responsive{
+        padding-bottom: 100%;
+        background-color: #15365b;
+        border-radius: 50%;
         margin: 0 auto;
     }
 
-    /*Map CSS*/
+    .img-box {
+        box-shadow: 0px 2px 22px 8px rgba(0, 0, 0, 0.75);
+    }
 
-    section#places{
+    .img-responsive {
+        margin: 0 auto;
+    }
+    /*Map CSS*/
+    
+    section#places {
         height: 950px;
         background-image: url("../img/mapSec.jpg");
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
     }
-        
+
     #map {
         height: 100%;
     }
-    .mapContainer,.mapRow , .mapCol{
+
+    .mapContainer,
+    .mapRow,
+    .mapCol {
         height: 100%;
     }
 
-
+    .groomedImg{
+        width: 50%;
+    }
     /* ==========================================================================
        Media Queries
        ========================================================================== */
+    
     @media (max-width: 830px) {
+
         .navbar-header {
             float: none;
         }
+
         .navbar-toggle {
             display: block;
         }
+
         .navbar-collapse {
             border-top: 1px solid transparent;
             box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
         }
+
         .navbar-collapse.collapse {
             display: none!important;
         }
+
         .navbar-nav {
             float: none!important;
             margin: 7.5px -15px;
         }
+
         .navbar-nav>li {
             float: none;
         }
+
         .navbar-nav>li>a {
             padding-top: 10px;
             padding-bottom: 10px;
         }
+
         .navbar-collapse.collapse.in {
             display: block !important;
-        }  
-
-        .nav{
-        background-color: #00324B;
-        min-height: 30px;
-        box-shadow: 0 0 10px black;
-        padding-top: 0;
-        transition : 1s all ease;
         }
 
-       .featuredImages{
-        padding: 10px;
+        .nav {
+            background-color: #00324B;
+            min-height: 30px;
+            box-shadow: 0 0 10px black;
+            padding-top: 0;
+            transition: 1s all ease;
+        }
+
+        .featuredImages {
+            padding: 10px;
         }
 
         div.aboutContainer,
         div.mapContainer,
         div.projectContainer,
         div.contactContainer,
-        div.contactRow{
+        div.contactRow {
             padding-top: 120px;
         }
 
-        .myPic{
+        .myPic {
             width: 50%;
             height: 50%;
         }
-
     }
 
     @media (max-width: 995px) {
-        section#home{
-        height: 1300px;
-       }
-       section#projects{
-        height: 900px;
-       }
-        .featuredImages{
-        padding-top: 10px;
+        section#home {
+            height: 2000px;
         }
 
-        .hideOn995{
-        display: none;
+        section#about {
+            height: 1250px;
         }
-        .hideOn380{
-            display:none;
+
+        section#places {
+            height: 900px;
+        }
+
+        .featuredImages {
+            padding-top: 10px;
+        }
+
+        .mapRow,
+        .mapCol,
+        #map {
+            height: 75%;
+        }
+
+        div.myLocations {
+            padding-top: 25px;
         }
     }
+    @media (max-width: 411px) {
+        section#home {
+            height: 1150px;
+        }
 
-    @media (max-width: 380px) {
-        section#home{
-        height: 1100px;
-       }
-       section#projects,
-       section#places{
-        height: 500px;
-       }
+        section#projects {
+            height: 900px;
+        }
+
+        section#places {
+            height: 900px;
+        }
 
         div.aboutContainer,
         div.mapContainer,
         div.projectContainer,
         div.contactContainer,
-        div.contactRow{
+        div.contactRow {
             padding-top: 45px;
         }
 
-        .hideOn380{
-            display:none;
+        .mapContainer,
+        .mapRow,
+        .mapCol,
+        #map {
+            height: 80%;
         }
-
-    }
-
-    @media print,
-           (-o-min-device-pixel-ratio: 5/4),
-           (-webkit-min-device-pixel-ratio: 1.25),
-           (min-resolution: 120dpi) {
-
-    }
-
-
-
-
-    /* ==========================================================================
-       Helper classes from HTMLBoilerPlate
-       ========================================================================== */
-
-    .hidden {
-        display: none !important;
-        visibility: hidden;
-    }
-
-    .visuallyhidden {
-        border: 0;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        width: 1px;
-    }
-
-    .visuallyhidden.focusable:active,
-    .visuallyhidden.focusable:focus {
-        clip: auto;
-        height: auto;
-        margin: 0;
-        overflow: visible;
-        position: static;
-        width: auto;
-    }
-
-    .invisible {
-        visibility: hidden;
-    }
-
-    .clearfix:before,
-    .clearfix:after {
-        content: " ";
-        display: table;
-    }
-
-    .clearfix:after {
-        clear: both;
-    }
-
-    .clearfix {
-        *zoom: 1;
     }

@@ -1,48 +1,48 @@
-# Movie Trailers website using Python
+### MyPortfolio
 
+##Getting Started
 
+  You will be needing the following tools,
+  
+  * Chrome Browser - To render the output
+  * Sublime Text 3
+  * Chrome Developer Tools
+  * https://validator.w3.org/ - To validate your HTML
+  * https://jigsaw.w3.org/css-validator/validator - To Validate your CSS
+  * http://jshint.com/ - To validate your javascript files
+  
+## How to build a page like this - [Click Here](http://vinodhthiagarajan1309.github.io/)
 
-### Concept:
+  * For creating HTML you will be needing snippets which will be taking slice of time , so this site. I decided to work
+  Bootstrap CSS framework for this project. Try out this page [http://www.initializr.com/](http://www.initializr.com/).
+  
+  ![Boiler Plate Image](http://s20.postimg.org/c1xtbqw3x/Boiler_Plate.jpg)
+  
+  * Another site I used is [shoelace.io](shoelace.io). You should understand the concepts of grids before you use this site. 
+  First read about it in [http://getbootstrap.com/css/#grid](http://getbootstrap.com/css/#grid) from the bootstarp page itself. Since bootstrap is mobile
+  first , I choose the mobile to define my layout and then work on the other displays. Remember one fact " A row has 12 sections".
+  Once you have decided how you want your layout you can generate it. Since we are building a HTML page you can use the HTML code from this screen.
+  
+  ![Shoelace io](http://s20.postimg.org/jj70qyln1/shoelace.png)
+  
+## Other useful sites
 
-Build a site using **Python** that shows top rated movies with their Title and Trailer information.The data is fed dynamically by the [themoviedb](https://www.themoviedb.org/documentation/api) api. Since this is a demo website the count of movie listed has been limited to top 15 movies. The number can be configured in moviesDB.py file
+  * [http://placehold.it/](http://placehold.it/) - If you haven't decided on the images for your screen but have an idea on how you want to lay them out
+  * [http://www.cssmatic.com/box-shadow](http://www.cssmatic.com/box-shadow) - It's always pain to create shadows and this is a wonderful site to refer if you need box shadow effects
+  * [Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) - You will need them for giving responsiveness for your screen
+  * [Pixabay](www.pixabay.com) - for great royalty free images
+  * [http://postimg.org/](http://postimg.org/) - If you want to keep refer images from a remote repository
+  
+## Screen Shots
 
-### Requirements:
+  # Browser View
+  
+  ![](http://s20.postimg.org/4psd67dvx/Browser_View.png)
+  
+  # Mobile View
+  
+  ![](http://s20.postimg.org/ch934ri19/Mobile_View.png)
 
-* [Python - based on your OS](https://www.python.org/downloads/)
-* Chrome browser preferably
-* Sign up for getting an API token from [themoviedb](https://www.themoviedb.org/documentation/api)
+## Future Use cases
 
-
-### Sample JSON Object that drives the site
-
-    {"poster_path":"\/lIv1QinFqz4dlp5U4lQ6HaiskOZ.jpg",
-    "adult":false,
-    "overview":"Under the direction of a ruthless instructor, a talented young drummer begins to pursue perfection at any cost, even his humanity.",
-    "release_date":"2014-10-10",
-    "genre_ids":[  
-    18,
-    10402
-    ],
-    "id":244786,
-    "original_title":"Whiplash",
-    "original_language":"en",
-    "title":"Whiplash",
-    "backdrop_path":"\/6bbZ6XyvgfjhQwbplnUh1LSj1ky.jpg",
-    "popularity":6.230627,
-    "vote_count":1874,
-    "video":false,
-    "vote_average":8.34
-    }
-    
-### Screenshots
-
-![alt text](http://s20.postimg.org/xg1rg6jv1/Website_Screen_Shot.png "Website Screen shot")
-
-![alt text](http://s20.postimg.org/h6blda971/Website_Screenshot_with_Trailer.png "Website Screen shot with trailer")
-
-
-### Future Use Cases
-
-* Show movie votes , ratings and story line on hover
-* Provide option for the user to provide rating (api supports it)
-* Provide navigation options to swtich between Top Rated , Now in Theatres and Coming Soon (api supports it)
+  * Will be adding Udacity projects and should make the page read projects dynamically from a JSON file

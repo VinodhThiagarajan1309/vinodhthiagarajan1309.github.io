@@ -19,7 +19,7 @@ $(document).ready(function(){
           $collapsableItems = $('.collapse'),
           isToggleButton = ($clickedOn.closest('.navbar-toggle').length == 1),
           isLink = ($clickedOn.closest('a').length == 1),
-          isOutsideNavbar = ($clickedOn.parents('.navbar').length == 0);
+          isOutsideNavbar = ($clickedOn.parents('.navbar').length === 0);
 
       if( (!isToggleButton && isLink) || isOutsideNavbar ) {
         $collapsableItems.each(function(){
@@ -40,7 +40,8 @@ function initializeMap() {
   var locations;
 
   var mapOptions = {
-  }
+    disableDefaultUI: false
+  };
 
   /* 
   For the map to be displayed, the googleMap var must be
