@@ -45,4 +45,4 @@
 
 ## Future Use cases
 
-  * Will be adding Udacity projects and should make the page read projects dynamically from a JSON file
+  * Will be adding Udacity projects and should make the page read projects dynamically from a JSON file.
